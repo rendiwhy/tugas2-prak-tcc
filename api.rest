@@ -1,0 +1,23 @@
+### Melihat Semua Catatan
+GET http://localhost:3000/api/notes
+
+### Menambah Catatan Baru
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+    "judul": "tes api rest",
+    "isi": "ronaldo messi"
+}
+
+### Mengedit Catatan (Ganti angka 1 dengan ID catatan yang ada)
+PUT http://localhost:3000/api/notes/4
+Content-Type: application/json
+
+{
+    "judul": "tes api edit",
+    "isi": "ronaldo messi duo goat"
+}
+
+### Menghapus Catatan (Ganti angka 1 dengan ID catatan)
+DELETE http://localhost:3000/api/notes/5
